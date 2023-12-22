@@ -49,29 +49,3 @@ choices = get_choices()
 result = check_win(choices["player"], choices["computer"])
 
 print(result)
-
-
-# call of function check_win
-# check_win("rock", "paper")
-
-
-
-
-# condition if/elif/else
-# age = 18
-
-# if age >= 18:
-#   print("you are an adult")
-# elif age > 12:
-#   print("you are a teenager")
-# elif age > 1:
-#   print("you are a child")
-# else:
-#   print("you are a baby")
-  
-
-# dictionary (object in JS) access 
-choix = {"player": "rock", "computer": "paper"}
-p_choix = choix["computer"]
-
-print(p_choix)
