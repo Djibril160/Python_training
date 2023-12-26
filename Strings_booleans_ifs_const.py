@@ -94,7 +94,7 @@ elif age > 1:
 else:
   print("you are a baby")
 
-#condition statement
+#condition statements
 condition = False
 name = "Djibril"
 
