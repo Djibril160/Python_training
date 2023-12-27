@@ -68,9 +68,52 @@ print(increment())
 print(increment())
 
 
+
 # LOOPS 2 types : while loops and for
 
+# While loop
+print("WHILE LOOP")
 condition = True
 while condition == True:
   print("Keep looping!")
   condition = False
+
+
+shots = 5
+while shots >= 0:
+  print(f"You have {shots} shots left!")
+  shots -= 1
+
+print("Game over!")
+
+
+# For loop 
+print("FOR LOOP")
+items =[1, 2, 3, 4]
+for number in items:
+  print(number)
+
+# For loop with range defined 
+for item in range(12):
+  print(item)
+
+# Index in for loop
+players =["Gerrard", "Benzema", "Kanté", "Van Dikj"]
+for index, top in enumerate(players):
+  print(index, top)
+
+# "continue" in for loop, skips the iteration in question
+items = [1, 2, 3, 4]
+for item in items:
+  if item == 2:
+    continue
+  print(item)
+
+# "break" in for loop, stop the iteration when condition is met
+items = [1, 2, 3, 4]
+for item in items:
+  if item == 3:
+    break
+  print(item)
+
+
