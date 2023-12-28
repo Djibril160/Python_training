@@ -69,6 +69,13 @@ print(increment())
 
 
 
+# lamdba function, also called anonymous functions
+
+multiply = lambda a, b : a * b
+
+print(f"Lambda function result is = {multiply(2, 10)}")
+
+
 # LOOPS 2 types : while loops and for
 
 # While loop
