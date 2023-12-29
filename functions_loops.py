@@ -70,6 +70,7 @@ print(increment())
 
 
 # lamdba function, also called anonymous functions
+# a, b = parameters of functions
 
 multiply = lambda a, b : a * b
 
