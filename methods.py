@@ -17,6 +17,8 @@ len(name) Return the number of items in a container
   string.split(separator, maxsplit)
   separator:	Optional. Specifies the separator to use when splitting the string. By default any whitespace is a separator
   maxsplit:	Optional. Specifies how many splits to do. Default value is -1, which is "all occurrences"
+  .split()[0] = garder que le premier de la liste 
+  .split()[-1] = garder que le dernier de la liste 
 .find() 
   Method finds the first occurrence of the specified value
   Return the lowest index in the string where substring is found
