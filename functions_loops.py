@@ -124,4 +124,23 @@ for item in items:
     break
   print(item)
 
+# focntion zip() 
+"""
+La fonction zip() en Python est utilisée pour combiner les éléments de deux ou plusieurs séquences (comme des listes, des tuples, etc.) en paires ordonnées. 
+Elle retourne un objet itérable qui génère ces paires.
+
+Voici comment elle fonctionne :
+
+Supposons que vous ayez deux listes, liste1 et liste2, et que vous vouliez les combiner en paires :
+"""
+
+liste1 = [1, 2, 3]
+liste2 = ['a', 'b', 'c']
+
+resultat = zip(liste1, liste2)
+# La variable resultat contiendra maintenant un objet itérable qui génère les paires suivantes :
+
+# (1, 'a')
+# (2, 'b')
+# (3, 'c')
 
