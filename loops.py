@@ -36,3 +36,10 @@ for index, (row_even, row_odd) in enumerate(zip(rows_even, rows_odd)):
     self.scroll_to(row_even)
     invoice = self.get_element('.//div[@class="col-xs-12"]/a[text()="Scarica in PDF"]', "xpath", driver=row_odd)
     self.secure_download(invoice, invoice_id, self.already_downloaded_invoices)
+
+"""
+Dans cette boucle, enumerate() est utilisé pour obtenir à la fois l'indice index et les paires de row_even et row_odd. 
+La boucle s'exécute jusqu'à ce que index atteigne la valeur 6, 
+auquel cas elle s'arrête en utilisant l'instruction break, ce qui limite le nombre d'itérations à 6. 
+Cela permet de traiter les six premières paires de row_even et row_odd
+"""
