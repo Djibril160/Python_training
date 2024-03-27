@@ -9,7 +9,7 @@ len(name) Return the number of items in a container
 .isupper()
 .startswith()
 .endswith()
-.title() put all letter in capital letter and the rest if lower 
+.title() Make the first letter in each word uppercase and the rest in lower
 .replace() Return a copy with all occurrences of substring old replaced by new. ("old element", "new element")
 .strip() removes or truncates the given characters from the beginning and the end of the original string
 .split() 
