@@ -1,4 +1,7 @@
-# Lists 
+######################################## Lists ########################################
+"""
+can take any type of value as long as it's separated with a comma (,)
+"""
 players = ["Gerrard", "Zidane", 6, 10, True, False]
 
 players[2] = "Ronaldinho"
@@ -32,7 +35,11 @@ print(items)
 print(itemscopy)
 
 
-# Tuples multiple group of list which can't be changed
+######################################### Tuples ########################################
+
+"""
+a Tuple is multiple group of list which can't be changed 
+"""
 
 names = ("Koumba", "Diabé", "Idris", "Younous") # can be done without parentheses
 print(names.index("Idris")) 
