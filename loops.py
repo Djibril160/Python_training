@@ -10,7 +10,7 @@ sum = 0
 
 for x in range(10):
   sum += x
-  print(sum)
+  print("sum in range = ",sum)
 
 # loop with : 
 # index limit  
@@ -27,7 +27,7 @@ rows_even = rows[::2]
 
 rows_odd = rows[1::2]
 # ici idem que là haut, sauf qu'on commence à l'index 1 
-
+"""
 for index, (row_even, row_odd) in enumerate(zip(rows_even, rows_odd)):
     if index >= 6:
         break
@@ -36,10 +36,18 @@ for index, (row_even, row_odd) in enumerate(zip(rows_even, rows_odd)):
     self.scroll_to(row_even)
     invoice = self.get_element('.//div[@class="col-xs-12"]/a[text()="Scarica in PDF"]', "xpath", driver=row_odd)
     self.secure_download(invoice, invoice_id, self.already_downloaded_invoices)
-
+"""
 """
 Dans cette boucle, enumerate() est utilisé pour obtenir à la fois l'indice index et les paires de row_even et row_odd. 
 La boucle s'exécute jusqu'à ce que index atteigne la valeur 6, 
 auquel cas elle s'arrête en utilisant l'instruction break, ce qui limite le nombre d'itérations à 6. 
 Cela permet de traiter les six premières paires de row_even et row_odd
 """
+
+################################  WHILE LOOP ####################################################
+
+counter = 0.0
+while counter <= 1.0:
+  print("counter => ", counter)
+  counter += 0.25
+
