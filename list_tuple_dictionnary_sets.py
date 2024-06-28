@@ -35,17 +35,17 @@ print(items)
 print(itemscopy)
 
 
-######################################### Tuples ########################################
+print("######################################### Tuples ########################################")
 
 """
-a Tuple is multiple group of list which can't be changed 
+a Tuple is multiple group of list which can't be changed, ==> immutable like a string 
 """
 
 names = ("Koumba", "Diabé", "Idris", "Younous") # can be done without parentheses
 print(names.index("Idris")) 
 print(names[0])
 print(len(names))
-print("Djibril" in names)
+print("Diabé" in names)
 print(type(names))
 
 

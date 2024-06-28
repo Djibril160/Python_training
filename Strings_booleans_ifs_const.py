@@ -11,7 +11,9 @@ from enum import Enum
     ACTIVE = 1
     SLEEPING = "KO"
   """
-# Strings
+print("######################################### Strings ########################################")
+# String is immutable, you can't change the characters in a string, you can read/find it 
+
 "Djibril"
 'Djibril'
 
