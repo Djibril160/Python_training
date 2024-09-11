@@ -52,7 +52,13 @@ while counter <= 1.0:
   counter += 0.25
 
 ################################  list comprehension ####################################################
+# redefine a list
 
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+print(newlist)
+
+# create a list
 account_rows = self.get_element('//select[@id="accountSelector"]/option', "xpath", index="*")
 accounts = [account.text[0:7] for account in account_rows]
 
