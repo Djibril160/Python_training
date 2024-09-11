@@ -51,3 +51,9 @@ while counter <= 1.0:
   print("counter => ", counter)
   counter += 0.25
 
+################################  list comprehension ####################################################
+
+account_rows = self.get_element('//select[@id="accountSelector"]/option', "xpath", index="*")
+accounts = [account.text[0:7] for account in account_rows]
+
+# accounts = ['3019690', '3041087', '3062396', '3083766']
