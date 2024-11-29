@@ -43,26 +43,29 @@ dans la sous classe: super().__init__(team, player) #Appel du constructeur de la
 
 # Premierleague = nom de la classe (parent ici)
 class Premierleague:
-  def __init__ (self, team, player):  # 
+  def __init__ (self, team, player, position):
+    # 3 attributes here: position, player, team
     self.team = team
     self.player = player
+    self.position = position
   
   def description(self):
-    return f"{self.player} plays in {self.team} team"
+    return f"{self.player} plays for {self.team} as {self.position}"
   
-salah = Premierleague("Liverpool", "Mohammed Salah")
+# Objet :
+salah = Premierleague("Liverpool", "Mohammed Salah", "striker")
 
-print(salah.team)
-print(salah.player)
+print(f"printing team of player: {salah.team}")
+print(f"printing name: {salah.player}")
 
 print(salah.description())
 
 
 #Classe FootballPlayer (enfant) qui hérite de Premierleague
 class FootballPlayer(Premierleague):
-  def __init__(self, team, player, position):
+  def __init__(self, team, player, value):
     super().__init__(team, player) #Appel du constructeur de la classe parente avec super()
-    self.position = position
+    self.value = value
 
   def info(self):
     return f"{self.player} plays as a {self.position} for {self.team}"
