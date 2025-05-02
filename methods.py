@@ -2,6 +2,12 @@
 
 """
 
+dir() ==> lists all methods available for a type 
+ex : dir(str) we have for ex : count, title, capitalize etc...
+
+help() ==> gives info/documentation on a specific type 
+ex: help(str) or directly help(str.isalpha) to get the specify method explanation  
+
 len(name) Return the number of items in a container 
 .upper()
 .islower()
