@@ -52,8 +52,11 @@ print("Diabé" in names)
 print(type(names))
 
 
-# Dictionnaries => { key:value } pair
+########################################## Dictionnaries ######################################## 
+
 """
+Dictionnaries => { key:value } pair
+keys cannot be changed 
 key : can be string, n°, tuple
 """
 
@@ -72,6 +75,10 @@ print(dog.popitem()) # removes last item added line
 print("colors" in dog) # if the key colors is in the dictionnary
 print(list(dog.keys()))
 del dog["name"]
+
+my_dict = {"one": 1, "two": 2}
+my_dict.items()
+# gives the list of all key/values in the dic ==> dict_items([('one', 1), ('two', 2)])
 
 
 # Sets : ensemble (set) is a collection of uniques elemenet non ordored (pas d'index), which can contains only one same element (ex "abc" only one time) 
