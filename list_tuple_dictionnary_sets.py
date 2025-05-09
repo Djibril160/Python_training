@@ -1,6 +1,8 @@
 ######################################## Lists ########################################
 """
-can take any type of value as long as it's separated with a comma (,)
+a list is between [] square brackets
+can take any type of value as long as it's separated with a comma ","
+
 """
 players = ["Gerrard", "Zidane", 6, 10, True, False]
 
@@ -38,6 +40,7 @@ print(itemscopy)
 print("######################################### Tuples ########################################")
 
 """
+A tuple is between parentheses ()
 a Tuple is multiple group of list which can't be changed, ==> immutable like a string 
 """
 
@@ -71,18 +74,22 @@ print(list(dog.keys()))
 del dog["name"]
 
 
-# Sets : ensemble (set) is a collection of uniques elemenet non ordored (pas d'index), which can contains only one same element
+# Sets : ensemble (set) is a collection of uniques elemenet non ordored (pas d'index), which can contains only one same element (ex "abc" only one time) 
 """
 - in curly brackets{}
 - seperated by coma ","
 - useful to eliminate duplicate
-
+- can contains only immutable data (string, tuple, int..)
+not lists, sets, dic...  
 """ 
 
 # eliminate duplicate from a list
 my_list = [1, 2, 2, 3, 4, 4, 5, 5]
+
+# allow to eliminate duplicates of list :
 my_set = set(my_list)
 print(my_set)
+# result ->  my_set = {1, 2, 3, 4, 5}
 
 # operations 
 set1 = {1, 2, 3, 4}
