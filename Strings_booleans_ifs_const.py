@@ -122,6 +122,7 @@ print(p_choix)
 # number are consider as True EXECPT 0 
 # if a string, list or dictionary are empty => consider as False 
 # empty list, tuple, set, and dic are == False
+# None = False
 
 True 
 False
