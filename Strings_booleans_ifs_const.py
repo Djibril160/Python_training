@@ -118,9 +118,10 @@ p_choix = choix["computer"]
 print(p_choix)
 
 
-# Booleans
+################################################ Booleans ################################################
 # number are consider as True EXECPT 0 
 # if a string, list or dictionary are empty => consider as False 
+# empty list, tuple, set, and dic are == False
 
 True 
 False
