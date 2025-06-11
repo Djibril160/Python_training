@@ -1,6 +1,14 @@
 # for in loop
 
 numbers = [1, 2, 3, 4, 5]
+dog = { "name": ("Pitbull", "Dobermann"), "Dangerous": True, 93: "Yes", "nicknames" : ["black", 2.0, "fire", "bull", "flash"] }
+
+# ------------------------------ enumerate() ---------------------------------
+# enumerate(): permet de parcourir une collection d'éléments tout en gardant une trace de l'index de l'élément actuel dans une variable de compteur
+
+for i, nickname in enumerate(dog["nicknames"]):
+  print(f'index {i} est le dog {nickname}')
+
 # dog = { "name": ("Pitbull", "Dobermann"), "Dangerous": True, 93: "Yes", "numbers" : [1, 2, 3, 4, 5] }
 
 # for i in dog["numbers"]:
@@ -43,6 +51,24 @@ La boucle s'exécute jusqu'à ce que index atteigne la valeur 6,
 auquel cas elle s'arrête en utilisant l'instruction break, ce qui limite le nombre d'itérations à 6. 
 Cela permet de traiter les six premières paires de row_even et row_odd
 """
+
+
+# --------------------------- .items() --------------------------
+
+# .items() allows you to get a list of the key/value pairs in a dic
+
+print(hex_colors.items())
+
+person = {
+    "name": "Djibson",
+    "age": 38,
+    "city": "Laval"
+}
+
+for key, value in person.items():
+    print(f"{key}: {value}")
+
+
 
 ################################  WHILE LOOP ####################################################
 
