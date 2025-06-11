@@ -56,6 +56,8 @@ Cela permet de traiter les six premières paires de row_even et row_odd
 # --------------------------- .items() --------------------------
 
 # .items() allows you to get a list of the key/value pairs in a dic
+# .keys() (or nothing) to get only the keys
+# .values() to get only the values
 
 print(hex_colors.items())
 
