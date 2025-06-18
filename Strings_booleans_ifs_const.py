@@ -61,8 +61,11 @@ print("My name is slim Shady".split()) # method splits a string into a list
 myTuple = ("John", "Peter", "Vicky")
 
 x = " ".join(myTuple)
-
 print(x)
+
+my_list = ["h", "e", "l", "l", "o", "!"]
+la_hass = (", ").join(my_list[:4]).replace(", ","")
+print(la_hass)
 
 print("Djibril".startswith("D")) # check if a string starts with a specific character
 print("444".isalnum()) # Return True if the string is an alpha-numeric string, False otherwise.
