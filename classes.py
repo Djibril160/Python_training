@@ -70,3 +70,13 @@ class FootballPlayer(Premierleague):
 arnold = FootballPlayer("Liverpool", "Alexander Arnold", "right defender")
 
 print(arnold.info())
+
+
+"""
+Un '@classmethod' est une méthode qui est liée à la classe elle-même et non à une instance spécifique de la classe.
+
+Elle reçoit cls comme premier argument (au lieu de self pour une méthode d’instance).
+
+Elle peut accéder et modifier les attributs de classe, mais pas les attributs propres aux instances individuelles.
+
+"""
