@@ -63,16 +63,25 @@ print(salah.description())
 
 #Classe FootballPlayer (enfant) qui hérite de Premierleague
 class FootballPlayer(Premierleague):
-  def __init__(self, team, player, value):
-    super().__init__(team, player) #Appel du constructeur de la classe parente avec super()
+  gender = "male"
+  def __init__(self, team, player, position, value):
+    super().__init__(team, player, position) #Appel du constructeur de la classe parente avec super()
     self.value = value
 
   def info(self):
     return f"{self.player} plays as a {self.position} for {self.team}"
   
-arnold = FootballPlayer("Liverpool", "Alexander Arnold", "right defender")
+  @classmethod
+  def player_gender(cls):
+    return cls.gender
+  
+arnold = FootballPlayer("Liverpool", "Alexander Arnold", "right defender", 9929920)
 
 print(arnold.info())
+arnold.gender = "woman"
+
+print(f"This player is {arnold.gender}")
+
 
 
 """
