@@ -18,6 +18,7 @@ len(name) Return the number of items in a container
 .title() Make the first letter in each word uppercase and the rest in lower
 .replace() Return a copy with all occurrences of substring old replaced by new. ("old element", "new element")
 .strip() removes or truncates the given characters from the beginning and the end of the original string
+  Si l’argument characters n’est pas fourni, tous les espaces au début et à la fin sont supprimés de la chaîne.
 .split() 
   The split() method splits a string into a list
   string.split(separator, maxsplit)
