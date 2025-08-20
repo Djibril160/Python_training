@@ -58,8 +58,10 @@ print("dJIbril soUkOuna".title()) # title() put all letter in capital letter and
 print("dJIbril soUkOuna".replace("dJIbril", "Ousmane")) # Return a copy with all occurrences of substring old replaced by new.
 print("  no whitespace     ".strip()) # removes or truncates the given characters from the beginning and the end of the original string
 print("My name is slim Shady".split()) # method splits a string into a list
-myTuple = ("John", "Peter", "Vicky")
+djibson = "djibril,38,malien"
+name, age, nationality = djibson.split(",") # create 3 variables with the values, must be same number of variable and values
 
+myTuple = ("John", "Peter", "Vicky")
 x = " ".join(myTuple)
 print(x)
 
