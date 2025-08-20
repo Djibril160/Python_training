@@ -14,6 +14,17 @@ for i, nickname in enumerate(dog["nicknames"]):
 # for i in dog["numbers"]:
 #   print(i)
 
+
+
+# ------------------------------ range() ---------------------------------
+  
+# range(1, 6, 2) 
+"""  
+  le premier =  l'index de début
+  le second = la ou ça s'arrete (excluant ce nombre) donc ça s'arrete a 5 ici
+  les troisieme = le pas, donc tous les 2 ici 
+"""
+
 sum = 0
 
 for x in range(10):
@@ -29,7 +40,7 @@ rows = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 rows_even = rows[::2] 
 # [::2] utilise une opération de découpage de liste pour sélectionner chaque deuxième élément de la liste rows. Voici comment cela fonctionne :
 # rows : C'est la liste à partir de laquelle vous souhaitez sélectionner les éléments.
-# [::2] : C'est la syntaxe de découpage de liste.
+# [::2] : C'est la syntaxe de découpage de liste, le pas
 # Le premier : indique que vous allez spécifier le début et la fin de la tranche,
 # le deuxième : spécifie le pas, c'est-à-dire le nombre d'éléments à sauter entre chaque élément sélectionné.
 
@@ -51,6 +62,13 @@ La boucle s'exécute jusqu'à ce que index atteigne la valeur 6,
 auquel cas elle s'arrête en utilisant l'instruction break, ce qui limite le nombre d'itérations à 6. 
 Cela permet de traiter les six premières paires de row_even et row_odd
 """
+
+
+list(range(1, 6, 2))
+[1, 3, 5]
+indexes = list(range(1, 6, 2))
+print(indexes)
+# OUTPUT: [1, 3, 5]
 
 
 # --------------------------- .items() --------------------------
@@ -91,3 +109,9 @@ account_rows = self.get_element('//select[@id="accountSelector"]/option', "xpath
 accounts = [account.text[0:7] for account in account_rows]
 
 # accounts = ['3019690', '3041087', '3062396', '3083766']
+
+
+# if/else dans comprehension list
+names = ["djib", "nina", "luca", "nina"]
+bon_noms = [name.upper() if name == "djib" else name.lower() for name in names]
+# output: ['DJIB', 'nina', 'luca', 'nina']
