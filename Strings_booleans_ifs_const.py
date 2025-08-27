@@ -36,6 +36,19 @@ print(name[:10])
 # if blank end = take to the end
 print(name[11:])
 
+rows = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+rows_even = rows[::2] 
+# [::2] utilise une opération de découpage de liste pour sélectionner chaque deuxième élément de la liste rows. 
+# Le premier : indique le début de la tranche,
+# Le deuxième : indique la  fin de la tranche,
+# le troisième : spécifie le pas, c'est-à-dire tout les 2 élément sélectionné.
+# rows : C'est la liste à partir de laquelle on souhaite sélectionner les éléments.
+# [::2] : C'est la syntaxe de découpage de liste, 2 = le pas
+
+# ici, c'est la même chose mais à partir de 1
+rows_odd = rows[1::2]
+
+
 # escaping charater adding backquote in a string with backslash
 quality = "l\"exellence\"" 
 quality2 = ' Bogosse"'

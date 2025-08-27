@@ -52,7 +52,7 @@ print("Diabé" in names)
 print(type(names))
 
 
-########################################## Dictionnaries ######################################## 
+print("########################################## Dictionnaries ########################################")
 
 """
 Dictionnaries => { key:value } pair
@@ -81,6 +81,7 @@ my_dict.items()
 # gives the list of all key/values in the dic ==> dict_items([('one', 1), ('two', 2)])
 
 
+print("########################################## Sets ########################################")
 # Sets : ensemble (set) is a collection of uniques elemenet non ordored (pas d'index), which can contains only one same element (ex "abc" only one time) 
 """
 - in curly brackets{}
@@ -110,4 +111,7 @@ print(intersection)  # display : {3, 4}
 print(union)         # display : {1, 2, 3, 4, 5, 6}
 print(difference)    # display : {1, 2}
 
+# create a dictionnary from a set 
+squares = {f"square_{num}":num * num for num in range(10)}
+# output: {'square_0': 0, 'square_1': 1, 'square_2': 4, 'square_3': 9, 'square_4': 16, 'square_5': 25, 'square_6': 36, 'square_7': 49, 'square_8': 64, 'square_9': 81}
 

@@ -127,7 +127,7 @@ for item in items:
 # focntion zip() 
 """
 La fonction zip() en Python est utilisée pour combiner les éléments de deux ou plusieurs séquences (comme des listes, des tuples, etc.) en paires ordonnées. 
-Elle retourne un objet itérable qui génère ces paires.
+Elle retourne un objet itérable qui génère ces paires, pour les pairs disponibles
 
 Voici comment elle fonctionne :
 
@@ -139,8 +139,19 @@ liste2 = ['a', 'b', 'c']
 
 resultat = zip(liste1, liste2)
 # La variable resultat contiendra maintenant un objet itérable qui génère les paires suivantes :
-
 # (1, 'a')
 # (2, 'b')
 # (3, 'c')
+
+# ou zip to dict 
+players = ["djibson", "Mouss", "Ous"]
+scores = [4, 3, 1, 2]
+
+results = zip(players, scores)
+list_dic_results = [{player: score} for player, score in results]
+
+# direct 
+list_dic_results_bis = dict(zip(players, scores))
+
+
 

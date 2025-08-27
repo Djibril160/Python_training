@@ -115,3 +115,8 @@ accounts = [account.text[0:7] for account in account_rows]
 names = ["djib", "nina", "luca", "nina"]
 bon_noms = [name.upper() if name == "djib" else name.lower() for name in names]
 # output: ['DJIB', 'nina', 'luca', 'nina']
+
+# with join
+even_square = [num * num  for num in range(6) if num % 2 == 0]
+even_one_str = ", ".join([str(even) for even in even_square])
+# output: '0, 4, 16'
