@@ -52,7 +52,7 @@ class Premierleague:
   def description(self):
     return f"{self.player} plays for {self.team} as {self.position}"
   
-# Objet :
+# instance / Objet :
 salah = Premierleague("Liverpool", "Mohammed Salah", "striker")
 
 print(f"printing team of player: {salah.team}")
