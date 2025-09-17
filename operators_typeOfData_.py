@@ -19,6 +19,10 @@ print(f"type of variable N° maillot: {type(num_shirt)}")
 print(f"Is name an instance of str ? {isinstance(name, str)}")
 # print(type(name) == num)
 
+# isinstance(), verifie le type de l'élément, et renvoie un bool
+print("______________age est un int?_____________")
+print(isinstance(age,int)) # False, c'est un float
+
 # convert str to float
 raliss_str = "2000000" # amount in str
 raliss_int = float(raliss_str) #converted into number int
@@ -65,6 +69,21 @@ if the first operand is True, "and" checks the second argument, otherwise return
 print(0 and 1) 
 print(1 and 0)
 print("coucou" and [])
+
+
+"""
+"any()" Retourne True si au moins un élément de l’itérable est "truthy"
+"all()" Retourne True si atous les  éléments de l’itérable sont "truthy"
+"""
+
+# any()
+mots = ["lion", "tigre", "chat"]
+print(any(len(m) > 4 for m in mots)) # True, tigre a 5 lettres
+
+# all()
+mots = ["lion", "tigre", "chat"]
+print(all(len(m) > 4 for m in mots)) # False , il y a que tigre qui a plus de 4 lettres
+
 
 """
 "is" return true if both  object are the same
