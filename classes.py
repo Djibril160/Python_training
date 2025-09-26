@@ -37,7 +37,10 @@ On peut accéder à ces attributs et appeler des méthodes associées à l'objet
 on peut faire hériter (inheritance) une classe d'une autre classe: 
 celle qui hérite est l'enfant/sous-classe et peut hériter des attributs et des méthodes celle qui fait hérité appelée parente/super-classe
 
-dans la sous classe: super().__init__(team, player) #Appel du constructeur de la classe parente avec super()
+dans la sous classe: super().__init__(team, player) #Appel du constructeur de la classe parente avec super(), avec ses nouveaux atttribus
+
+Si on ne fait pas d'init (__init__) dans la sous class, ça lance le init de la classe parente, en prenant ses attributs
+
 
 """
 
